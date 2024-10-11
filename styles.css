@@ -10,6 +10,7 @@ body {
 
 #container {
     max-width: 1200px;
+    margin: auto;
 }
 
 header {
@@ -39,8 +40,39 @@ header {
     color: #f4f4f4;
     padding: 6px 10px;
     border-radius: 5px;
+    font-size: 12px;
 }
 
 main {
     max-width: 1000px;
+    margin: auto;
+}
+
+div#intro {
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+div#intro img {
+    max-width: 400px;
+}
+
+.info {
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.info h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+.info p {
+    font-size: 13px;
+    margin: 7px 0 20px;
+    color: #999999;
+    line-height: 1.5;
 }
