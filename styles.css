@@ -76,3 +76,13 @@ div#intro img {
     color: #999999;
     line-height: 1.5;
 }
+
+#sponsors {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sponsors {
+    width: 100px;
+    margin: 15px;
+}
