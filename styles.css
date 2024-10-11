@@ -13,16 +13,33 @@ body {
 }
 
 header {
-    height: 20px;
+    margin: 0 10px;
+    height: 40px;
+    padding: 10px;
     font-size: 12px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 #brand-top {
     height: 20px;
 }
 
+.nav-items {
+    padding: 10px;
+    text-decoration: none;
+    color: #121212;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #121212;
+    color: #f4f4f4;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
 
 main {
     max-width: 1000px;
