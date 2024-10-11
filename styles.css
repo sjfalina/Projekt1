@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "inter";
+    src: url(material/Inter.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: "inter";
+}
+
+#container {
+    max-width: 1200px;
+}
+
+header {
+    height: 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#brand-top {
+    height: 20px;
+}
+
+
+main {
+    max-width: 1000px;
+}
