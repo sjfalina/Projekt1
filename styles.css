@@ -6,6 +6,7 @@
 body {
     margin: 0;
     font-family: "inter";
+    background-color: #f4f4f4;
 }
 
 #container {
@@ -85,4 +86,32 @@ div#intro img {
 .sponsors {
     width: 100px;
     margin: 15px;
+}
+
+.reasons {
+    margin: 70px 0;
+}
+
+.info2 {
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+
+.info2 h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.info2 p {
+    font-size: 12.5px;
+    margin: 7px 0 20px;
+    color: #999999;
+    line-height: 1.5;
+}
+
+.reasons img {
+    width: 1000px;
+    box-shadow: 0.5px 0.7px 0.5em #e5e5e5;
+    border-radius: 8px;
+    overflow: hidden;
 }
