@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font-family: "inter";
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 #container {
@@ -49,6 +49,10 @@ main {
     margin: auto;
 }
 
+main p {
+    color: #999999;
+}
+
 div#intro {
     padding: 70px 0;
     display: grid;
@@ -74,7 +78,6 @@ div#intro img {
 .info p {
     font-size: 13px;
     margin: 7px 0 20px;
-    color: #999999;
     line-height: 1.5;
 }
 
@@ -93,8 +96,8 @@ div#intro img {
 }
 
 .info2 {
-    max-width: 400px;
     margin-bottom: 40px;
+    max-width: 400px;
 }
 
 .info2 h1 {
@@ -105,7 +108,6 @@ div#intro img {
 .info2 p {
     font-size: 12.5px;
     margin: 7px 0 20px;
-    color: #999999;
     line-height: 1.5;
 }
 
@@ -138,6 +140,57 @@ div#intro img {
 
 .who p {
     margin: 0;
-    color: #999999;
     font-size: 12px;
+}
+
+#start {
+    margin: 80px auto;
+    padding: 80px 0 60px;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0 1px 0;
+    text-align: center;
+}
+
+.centered {
+    max-width: 500px;
+    margin: auto;
+
+}
+
+.centered p {
+    font-size: 13px;
+
+}
+
+
+#list {
+    font-size: 13px;
+    width: 500px;
+    margin: 50px auto;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1.5px solid #e5e5e5;
+    align-items: center;
+}
+
+#no-border {
+    border: 0px;
+}
+
+.end {
+    justify-self: end;
+    color: #121212
+}
+
+
+#list img {
+    height: 17px;
 }
