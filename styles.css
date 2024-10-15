@@ -18,7 +18,7 @@ header {
     margin: 0 10px;
     height: 40px;
     padding: 10px;
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +41,7 @@ header {
     color: #f4f4f4;
     padding: 6px 10px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 main {
@@ -51,6 +51,7 @@ main {
 
 main p {
     color: #999999;
+    line-height: 1.5;
 }
 
 div#intro {
@@ -62,11 +63,11 @@ div#intro {
 }
 
 div#intro img {
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .info {
-    max-width: 400px;
+    max-width: 450px;
     margin-top: 10px;
 }
 
@@ -76,7 +77,7 @@ div#intro img {
 }
 
 .info p {
-    font-size: 13px;
+    font-size: 18px;
     margin: 7px 0 20px;
     line-height: 1.5;
 }
@@ -97,50 +98,64 @@ div#intro img {
 
 .info2 {
     margin-bottom: 40px;
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .info2 h1 {
     font-size: 36px;
+    font-weight: 650;
     margin: 0;
 }
 
 .info2 p {
-    font-size: 12.5px;
+    font-size: 15px;
     margin: 7px 0 20px;
     line-height: 1.5;
 }
 
 .reasons img {
+    margin: auto;
     width: 1000px;
     box-shadow: 0.5px 0.7px 0.5em #e5e5e5;
     border-radius: 8px;
     overflow: hidden;
 }
 
-.quote h1 {
+.quote h2 {
     color: #999999;
     text-align: center;
+    font-size: 36px;
+    font-weight: 550;
+
 }
 
 .who {
     display: flex;
     gap: 10px;
     justify-content: center;
+
+
 }
 
 .who img {
+    margin: 0;
     width: 50px;
+    box-shadow: 0 0 0 0;
     object-fit: contain;
 }
 
 .who h4 {
     margin: 0;
+    font-size: 14px;
+    font-weight: 450;
 }
 
-.who p {
+.pres p {
     margin: 0;
     font-size: 12px;
+    font-weight: 320;
+
+
 }
 
 #start {
@@ -158,12 +173,15 @@ div#intro img {
 
 .centered h1 {
     margin: 0;
+    font-size: 36px;
+    font-weight: 650;
 
 }
 
 .centered p {
     margin-top: 5px;
-    font-size: 13.5px;
+    font-size: 15px;
+    color: #7f7f7f;
 
 
 }
@@ -171,19 +189,26 @@ div#intro img {
 
 #list {
     font-size: 13px;
-    width: 500px;
+    width: 550px;
     margin: 50px auto;
     background-color: #f4f4f4;
-    padding: 10px 20px;
+    padding: 15px 30px;
     margin-bottom: 20px;
     border-radius: 8px;
+}
 
+#list p {
+    font-size: 15px;
+}
+
+.end {
+    color: #121212;
 }
 
 .items {
     display: flex;
     justify-content: space-between;
-    border-top: 1.5px solid #e5e5e5;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     align-items: center;
 }
 
@@ -191,10 +216,6 @@ div#intro img {
     border: 0px;
 }
 
-.end {
-    justify-self: end;
-    color: #121212
-}
 
 
 #list img {
@@ -202,20 +223,23 @@ div#intro img {
 }
 
 #columns {
-    margin: 30px 0;
+    margin: 30px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .column {
-    padding: 0 20px;
-    font-size: 14px;
+    justify-self: center;
+    width: 280px;
+    font-size: 15px;
     text-align: center;
+
 }
 
 .column h2 {
     margin: 0;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .column a {
@@ -225,4 +249,42 @@ div#intro img {
 #middle {
     border: solid #e5e5e5;
     border-width: 0 1px;
+    padding: 0 15px;
+}
+
+#badges {
+    margin: 80px auto;
+}
+
+#flex {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+#important {
+    width: 400px;
+}
+
+#important h3 {
+    margin-top: 35px;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+#important p {
+    color: #121212;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+#badges img {
+    margin: 0;
+    width: 400px;
+    box-shadow: 0 0 0 0;
+    object-fit: contain;
+
 }
