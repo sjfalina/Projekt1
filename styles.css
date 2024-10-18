@@ -7,7 +7,6 @@ body {
     margin: 0;
     font-family: "inter";
     background-color: white;
-    position: relative;
 }
 
 #container {
@@ -16,6 +15,10 @@ body {
 }
 
 header {
+    position: relative;
+}
+
+#top-container {
     position: fixed;
     left: 0;
     right: 0;
@@ -24,14 +27,26 @@ header {
     padding: 10px;
     background-color: white;
     font-size: 14px;
+    border-bottom: 1px solid #e5e5e5;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#top-menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #e5e5e5;
+    flex-grow: 1;
 }
 
 #brand-top {
     height: 20px;
+}
+
+header a:hover {
+    border-radius: 8px;
+    background-color: #f4f4f4;
 }
 
 .nav-items {
@@ -44,13 +59,32 @@ header {
     border-left: 1px solid #e5e5e5;
 }
 
+#hamburgers img {
+    height: 20px;
+}
+
+div#hamburgers {
+    padding: 5px;
+    border-radius: 8px;
+    display: none;
+}
+
+#hamburgers:hover {
+    background-color: #f4f4f4;
+}
+
 .button {
     text-decoration: none;
     background-color: #121212;
     color: #f4f4f4;
     padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: 550;
+    box-shadow: 0.5px 0.7px 0.5em rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #666666;
 }
 
 main {
@@ -64,15 +98,17 @@ main p {
 }
 
 div#intro {
-    padding: 70px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 110px 0 70px;
+    display: flex;
     gap: 50px;
     border-bottom: 1px solid #e5e5e5;
 }
 
 div#intro img {
-    max-width: 450px;
+    width: 450px;
+    object-fit: contain;
+    flex-basis: 450px;
+    flex-shrink: 1;
 }
 
 .info {
@@ -97,12 +133,14 @@ div#intro img {
 }
 
 .sponsors {
-    width: 100px;
+    height: 23px;
     margin: 15px;
 }
 
 .reasons {
-    margin: 70px 0;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .info2 {
@@ -123,19 +161,21 @@ div#intro img {
 }
 
 .reasons img {
-    margin: auto;
-    width: 1000px;
+    margin: 0 auto;
+    width: 90%;
+    object-fit: contain;
     box-shadow: 0.5px 0.7px 0.5em #e5e5e5;
     border-radius: 8px;
     overflow: hidden;
+
 }
 
 .quote h2 {
+    margin: 20px 10px;
     color: #999999;
     text-align: center;
     font-size: 36px;
     font-weight: 550;
-
 }
 
 .who {
@@ -253,6 +293,10 @@ div#intro img {
 
 .column a {
     color: #121212;
+}
+
+.column a:hover {
+    color: #087fe7;
 }
 
 #middle {
@@ -378,4 +422,114 @@ footer {
 .foot-nav a {
     text-decoration: none;
     color: #7f7f7f;
+}
+
+.foot-nav a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 920px) {
+    #top-container {
+        justify-content: space-between;
+        position: absolute;
+    }
+
+    nav#top-menu {
+        display: none;
+    }
+
+    div#hamburgers {
+        display: block;
+        width: 20px;
+    }
+}
+
+@media (max-width:600px) {
+
+    #top-menu {
+        border-width: 0;
+        position: absolute;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    div#intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reasons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reasons img {
+        max-width: 500px;
+    }
+
+    .quote h2 {
+        font-size: 26px;
+        max-width: 500px;
+    }
+
+    #list {
+        width: 80vw;
+    }
+
+    #columns {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .column {
+        width: 500px;
+        font-size: 15px;
+
+    }
+
+    #middle {
+        border-width: 0;
+    }
+
+    #flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div#percentage {
+        width: 500px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+    }
+
+    .value {
+        border-width: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    #footer-nav {
+        max-width: 500px;
+        align-self: center;
+        justify-self: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    #share img {
+        margin-bottom: 0;
+
+    }
+
 }
