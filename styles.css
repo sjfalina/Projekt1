@@ -163,7 +163,6 @@ div#intro {
 div#intro img {
     width: 450px;
     object-fit: contain;
-    flex-basis: 450px;
     flex-shrink: 1;
 }
 
@@ -499,6 +498,27 @@ footer {
     }
 }
 
+@media (max-width: 900px) {
+    div#intro {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 110px 0 70px;
+        gap: 0;
+        border-bottom: 1px solid #e5e5e5;
+        flex-shrink: 1;
+    }
+
+    div.info {
+        max-width: 750px;
+        text-align: center;
+    }
+
+    div.info p {
+        max-width: 650px;
+    }
+
+}
+
 @media (max-width:600px) {
 
     #top-container {
@@ -511,8 +531,7 @@ footer {
     }
 
     div#intro {
-        flex-direction: column;
-        align-items: center;
+        margin: 10px;
     }
 
     .reasons {
