@@ -55,6 +55,61 @@ header a:hover {
     color: #121212;
 }
 
+.top-item {
+    display: inline;
+    position: relative;
+}
+
+.sub-nav {
+    position: absolute;
+    margin: 5px 0;
+    padding: 5px;
+    width: 250px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0.5px 0.5px 0.2em rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+nav#product:hover nav.sub-nav {
+    display: block;
+}
+
+.sub-item1 {
+    display: flex;
+    padding: 5px 0;
+}
+
+a.sub-item1 {
+    text-decoration: none;
+    font-weight: 550;
+    color: #121212;
+}
+
+.picbox {
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    padding: 5px;
+    box-shadow: 0.5px 0.5px 0.1em rgba(0, 0, 0, 0.2);
+}
+
+div.picbox img {
+    margin: auto;
+    width: 20px;
+}
+
+.alt p {
+    font-size: 12px;
+    font-weight: 450;
+    margin: 2px 0;
+    color: #999999;
+}
+
+.alt {
+    margin: 0 10px;
+}
+
 #last-top-nav {
     border-left: 1px solid #e5e5e5;
 }
