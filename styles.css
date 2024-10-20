@@ -487,7 +487,6 @@ footer {
 @media (max-width: 920px) {
     #top-container {
         justify-content: space-between;
-        position: absolute;
     }
 
     nav#top-menu {
@@ -502,9 +501,9 @@ footer {
 
 @media (max-width:600px) {
 
-    #top-menu {
-        border-width: 0;
+    #top-container {
         position: absolute;
+        border-width: 0;
     }
 
     main {
