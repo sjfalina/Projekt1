@@ -519,6 +519,22 @@ footer {
         max-width: 650px;
     }
 
+    #columns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 0 30px;
+    }
+
+    #middle {
+        border-width: 0;
+        padding: 0;
+    }
+
+    .column {
+        width: auto;
+    }
+
+
 }
 
 @media (max-width:600px) {
