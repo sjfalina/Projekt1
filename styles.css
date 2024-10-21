@@ -12,6 +12,7 @@ body {
 #container {
     max-width: 1200px;
     margin: 0;
+    margin: 0 auto;
 }
 
 header {
@@ -525,6 +526,7 @@ footer {
         position: absolute;
         border-width: 0;
     }
+
 
     main {
         text-align: center;
