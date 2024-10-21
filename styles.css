@@ -42,6 +42,11 @@ header {
     flex-grow: 1;
 }
 
+#top-left {
+    display: flex;
+    align-items: center;
+}
+
 #brand-top {
     height: 20px;
 }
@@ -51,21 +56,27 @@ header a:hover {
     background-color: #f4f4f4;
 }
 
-.nav-items {
+a.nav-items {
     padding: 10px;
     text-decoration: none;
     color: #121212;
 }
 
-.top-item {
-    display: inline;
-    position: relative;
-}
+
 
 .sub-nav {
-    position: absolute;
     margin: 5px 0;
     padding: 5px;
+    min-width: 125px;
+    max-width: 170px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0.5px 0.5px 0.2em rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#sub-nav2 {
+    margin: 5px 0;
     width: 250px;
     background-color: white;
     border-radius: 6px;
@@ -73,9 +84,36 @@ header a:hover {
     display: none;
 }
 
-nav#product:hover nav.sub-nav {
-    display: block;
+a.sub-nav-items {
+    padding: 7px;
+    text-decoration: none;
+    color: #121212;
 }
+
+p a {
+    color: #999999;
+}
+
+.sub-nav p {
+    margin: 7px;
+    font-size: 12px;
+    color: #999999;
+    font-weight: 400;
+}
+
+
+nav.top-item:hover nav.sub-nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+nav#product:hover nav#sub-nav2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .sub-item1 {
     display: flex;
