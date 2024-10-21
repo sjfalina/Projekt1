@@ -146,7 +146,7 @@ div#hamburgers {
 
 main {
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 main p {
@@ -194,7 +194,8 @@ div#intro img {
 }
 
 .reasons {
-    margin: 70px auto;
+    max-width: 1000px;
+    margin: 70px 10px;
     display: flex;
     flex-direction: column;
 }
@@ -218,7 +219,7 @@ div#intro img {
 
 .reasons img {
     margin: 0 auto;
-    width: 90%;
+    max-width: 100%;
     object-fit: contain;
     box-shadow: 0.5px 0.7px 0.5em #e5e5e5;
     border-radius: 8px;
