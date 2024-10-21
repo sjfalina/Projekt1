@@ -11,7 +11,6 @@ body {
 
 #container {
     max-width: 1200px;
-    margin: 0;
     margin: 0 auto;
 }
 
@@ -39,6 +38,7 @@ header {
 #top-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-grow: 1;
 }
 
@@ -110,6 +110,11 @@ div.picbox img {
 
 .alt {
     margin: 0 10px;
+}
+
+#top-right-menu {
+    display: flex;
+    align-items: center;
 }
 
 #last-top-nav {
@@ -486,11 +491,12 @@ footer {
 }
 
 @media (max-width: 920px) {
+
     #top-container {
         justify-content: space-between;
     }
 
-    nav#top-menu {
+    a.nav-items {
         display: none;
     }
 
@@ -565,6 +571,9 @@ footer {
         border-width: 0;
     }
 
+    div#button {
+        display: none;
+    }
 
     main {
         text-align: center;
